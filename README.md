@@ -4,5 +4,8 @@
 
 ## Install
 
-## Usage
+```bash
+npm install @dotlim/fabric
+```
 
+## Usage
