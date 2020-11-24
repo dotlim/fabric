@@ -44,12 +44,12 @@ module.exports = {
     node: true,
   },
   extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'prettier',
-    'prettier/vue',
-    'prettier/@typescript-eslint',
-  ],
+    'eslint-config-airbnb',
+    'eslint-config-airbnb-typescript',
+    'eslint-config-prettier',
+    'eslint-config-prettier/vue',
+    'eslint-config-prettier/@typescript-eslint',
+  ].map(pkg => require.resolve(pkg)),
   rules: {
     'no-console': WARN,
     'no-underscore-dangle': OFF,
