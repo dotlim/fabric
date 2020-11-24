@@ -1,0 +1,36 @@
+{
+  "name": "@dotlim/fabric",
+  "version": "1.0.0",
+  "description": "A collection of configuration files containing prettier, eslint, stylelint",
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.9",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {},
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "eslint",
+    "prettier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotlim/fabric.git"
+  },
+  "author": "Kq <oxyzhg@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotlim/fabric/issues"
+  },
+  "homepage": "https://github.com/dotlim/fabric#readme"
+}
