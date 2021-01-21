@@ -37,7 +37,7 @@ if (!fs.existsSync(path.join(process.env.PWD || '.', './tsconfig.json'))) {
 }
 
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:vue/recommended'],
+  extends: ['eslint:recommended'],
   rules: {
     'no-console': WARN,
     'no-underscore-dangle': OFF,
@@ -57,119 +57,6 @@ module.exports = {
     ],
     semi: [ERROR, 'always'],
     // semi: [ERROR, 'never'],
-
-    // essential
-    'vue/custom-event-name-casing': OFF,
-    'vue/no-dupe-keys': ERROR,
-    'vue/no-dupe-v-else-if': ERROR,
-    'vue/no-duplicate-attributes': [
-      ERROR,
-      {
-        allowCoexistClass: true,
-        allowCoexistStyle: true,
-      },
-    ],
-    'vue/no-unused-components': [
-      WARN,
-      {
-        ignoreWhenBindingPresent: true,
-      },
-    ],
-    'vue/no-unused-vars': [
-      WARN,
-      {
-        ignorePattern: '^_',
-      },
-    ],
-
-    // recommended
-    'vue/attribute-hyphenation': WARN,
-    'vue/component-definition-name-casing': [WARN, 'PascalCase'],
-    'vue/html-closing-bracket-newline': [
-      WARN,
-      {
-        singleline: 'never',
-        multiline: 'always',
-      },
-    ],
-    'vue/html-closing-bracket-spacing': [
-      WARN,
-      {
-        startTag: 'never',
-        endTag: 'never',
-        selfClosingTag: 'always',
-      },
-    ],
-    'vue/html-end-tags': WARN,
-    'vue/html-indent': [
-      WARN,
-      2,
-      {
-        attribute: 1,
-        baseIndent: 1,
-        closeBracket: 0,
-        alignAttributesVertically: true,
-        ignores: [],
-      },
-    ],
-    'vue/html-quotes': [WARN, 'double', { avoidEscape: false }],
-    'vue/html-self-closing': [
-      WARN,
-      {
-        html: {
-          void: 'never',
-          normal: 'never',
-          component: 'always',
-        },
-        svg: 'always',
-        math: 'always',
-      },
-    ],
-    'vue/max-attributes-per-line': [
-      WARN,
-      {
-        singleline: 3,
-        multiline: {
-          max: 1,
-          allowFirstLine: false,
-        },
-      },
-    ],
-    'vue/multiline-html-element-content-newline': OFF,
-    'vue/mustache-interpolation-spacing': [WARN, 'always'],
-    'vue/no-multi-spaces': [
-      WARN,
-      {
-        ignoreProperties: false,
-      },
-    ],
-    'vue/no-spaces-around-equal-signs-in-attribute': WARN,
-    'vue/prop-name-casing': [WARN, 'camelCase'],
-    'vue/require-default-prop': OFF,
-    'vue/require-prop-types': WARN,
-    'vue/singleline-html-element-content-newline': [
-      OFF,
-      {
-        ignoreWhenNoAttributes: true,
-        ignoreWhenEmpty: true,
-        ignores: ['pre', 'textarea'],
-      },
-    ],
-    'vue/v-bind-style': [WARN, 'shorthand'],
-    'vue/v-on-style': [WARN, 'shorthand'],
-    'vue/v-slot-style': [
-      WARN,
-      {
-        atComponent: 'v-slot',
-        default: 'shorthand',
-        named: 'shorthand',
-      },
-    ],
-
-    'vue/attributes-order': OFF,
-    'vue/component-tags-order': OFF,
-    'vue/order-in-components': OFF,
-    'vue/no-v-html': OFF,
   },
   parserOptions,
 };
