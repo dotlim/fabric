@@ -1,23 +1,29 @@
 {
   "name": "@dotlim/fabric",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "A collection of configuration files containing prettier, eslint, stylelint",
   "scripts": {
     "build": "tsc --build tsconfig.json"
   },
   "dependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.1.0"
+  },
+  "devDependencies": {
     "@types/node": "^14.14.10",
     "typescript": "^4.1.2"
   },
-  "devDependencies": {},
   "peerDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-vue": "^7.1.0"
+    "eslint": "^7.14.0"
   },
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "files": [
-    "dist"
+    "lib"
   ],
   "keywords": [
     "eslint",
