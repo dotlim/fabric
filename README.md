@@ -5,7 +5,17 @@
 ## Install
 
 ```bash
-npm install @dotlim/fabric
+npm install @dotlim/fabric -D
 ```
 
 ## Usage
+
+### Prettier
+
+```js
+module.exports = {
+  ...require("@dotlim/fabric/lib/prettier"),
+  // custom config
+};
+
+```
