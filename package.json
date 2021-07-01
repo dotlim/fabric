@@ -1,7 +1,7 @@
 {
   "name": "@dotlim/fabric",
-  "version": "1.0.0",
-  "description": "A collection of configuration files containing prettier, eslint, stylelint",
+  "version": "1.1.0",
+  "description": "A collection of project configuration files",
   "scripts": {
     "build": "tsc --build tsconfig.json"
   },
@@ -27,13 +27,14 @@
   ],
   "keywords": [
     "eslint",
-    "prettier"
+    "prettier",
+    "tsconfig"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dotlim/fabric.git"
   },
-  "author": "Kq <oxyzhg@163.com>",
+  "author": "oxyzhg",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dotlim/fabric/issues"

@@ -1,16 +1,11 @@
-# dependencies
-/node_modules
+# Dependency
+node_modules/
 
-# production
-/build
-/dist
-/lib
+# Compiler output
+build/
+lib/
 
-# lock files
-package-lock.json
-yarn.lock
-
-# log files
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
